@@ -15,10 +15,7 @@ import me.hoangnd.learn.service.shared.CPService;
 public class MainApp {
 
     public static void main(String[] args) {
-        ServiceLoader<CPService> ldr = ServiceLoader.load(CPService.class);
-        for (CPService provider : ldr) {
-            //We are only expecting one
-            provider.show();
-        }
+        CPService cPService = CPService.getDefault();
+        cPService.show();
     }
 }
