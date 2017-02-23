@@ -22,5 +22,5 @@ public interface CPService {
         throw new Error ("No CPService registered");
     }
     
-    public void show();
+    String show();
 }

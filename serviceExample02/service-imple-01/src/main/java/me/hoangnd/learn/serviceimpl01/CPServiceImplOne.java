@@ -13,7 +13,8 @@ import me.hoangnd.learn.service.shared.CPService;
  */
 public class CPServiceImplOne implements CPService {
     @Override
-    public void show(){
+    public String show(){
         System.out.println("CPServiceImplOne has been loaded....");
+        return "CPServiceImplOne has been loaded....";
     }
 }

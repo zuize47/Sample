@@ -5,7 +5,6 @@
  */
 package me.hoangnd.learn.serviceapp;
 
-import java.util.ServiceLoader;
 import me.hoangnd.learn.service.shared.CPService;
 
 /**
@@ -16,6 +15,6 @@ public class MainApp {
 
     public static void main(String[] args) {
         CPService cPService = CPService.getDefault();
-        cPService.show();
+        System.out.println(cPService.show());
     }
 }
